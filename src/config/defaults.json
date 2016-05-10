@@ -1,0 +1,8 @@
+{
+  "services": {
+    "name": "cart",
+    "version": "v1"
+  },
+  "cartExpirationDays": 7,
+  "maxNumberOfEntriesPerProduct": 10
+}
