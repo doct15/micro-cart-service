@@ -4,5 +4,16 @@
     "version": "v1"
   },
   "cartExpirationDays": 7,
-  "maxNumberOfEntriesPerProduct": 10
+  "maxQuantityPerProduct": 100,
+  "maxNumberOfEntries": 3,
+  "schemas": {
+    "addEntry": "./schemas/addEntrySchema"
+  },
+  "models": {
+    "cartModel": "./models/cartModel"
+  },
+  "hooks": {
+    "preAddEntry": "./hooks/preAddEntry",
+    "postAddEntry": "./hooks/postAddEntry"
+  }
 }

@@ -2,12 +2,10 @@
   "logger": {
     "level": "debug"
   },
-  "services": {
-    "port": "3001"
-  },
-  "gateway": {
+  "db": {
     "host": "localhost",
-    "port": "3000"
+    "db": "micro",
+    "debug": true
   }
 }
 
