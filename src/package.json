@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "doc": "docker -i . -o ../docs/code index.js models operations",
-    "apidoc": "aglio -i main.apib --theme-template triple -o ../docs/api/output.html",
+    "apidoc": "npm install aglio && aglio -i main.apib --theme-template triple -o ../docs/api/index.html",
     "test": "lab -v -e test test/test.js",
     "test-cov-html": "lab -v -e test -c -r html -o coverage.html test/test.js"
   },
@@ -23,7 +23,6 @@
     "shortid": "^2.2.6"
   },
   "devDependencies": {
-    "aglio": "^2.2.1",
     "code": "^3.0.0",
     "database-cleaner": "^0.13.0",
     "docker": "^0.2.14",
